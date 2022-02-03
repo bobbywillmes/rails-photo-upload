@@ -5,6 +5,7 @@
   - run command: `rails g scaffold movies title:string description:text year:integer rating:string`
 3. Initialize active storage in Rails
   - run command: `rails active_storage:install`
+  - then run: `rails db:migrate`
   - This migration creates three new tables: active_storage_blobs, active_storage_attachments & active_storage_variant_records
 4. Update model
   - `has_one_attached :image`
